@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(219, 216, 223);
+
+}
+
+.container{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 35px auto ;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 22px;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 47%;
+    max-height: 350px;
+    overflow: hidden;
+    background-color: rgb(113, 160, 212);
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(49, 39, 34);
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px 5px rgb(49, 39, 34);
+}
+
+.card h2{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px auto;
+}
+
+.card img{
+    width: 100%;
+}
+
+@media screen and (max-width:640px){
+    h1{
+        font-size: 27px;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:940px){
+    .card{
+        width: 30%;
+    }
+   
+}

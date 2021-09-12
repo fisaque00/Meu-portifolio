@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio responsível</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="container">
+        <h1> Bem-Vindo ao Meu Portifólio <span id="emoji" ></span></h1>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <h2>1º Primeiro Projeto</h2>
+                <img src="img/site academia.JPG" alt="1º Primeiro Projeto">
+            </div>
+            <div class="card">
+                <h2>2º Segundo Projeto</h2>
+                <img src="img/site academia.JPG" alt="2º Segundo Projeto">
+            </div>
+            <div class="card">
+                <h2>3º Terceiro Projeto</h2>
+                <img src="img/site academia.JPG" alt="3º Terceiro Projeto">
+            </div>
+            <div class="card">
+                <h2>4º Quarto Projeto</h2>
+                <img src="img/site academia.JPG" alt="4º Quarto Projeto">
+            </div>
+            <div class="card">
+                <h2>5º Quinto Projeto</h2>
+                <img src="img/site academia.JPG" alt="5º Quinto Projeto">
+            </div>
+            <div class="card">
+                <h2>6º Sexto Projeto</h2>
+                <img src="img/site academia.JPG" alt="6º sexto Projeto">
+            </div>
+            <div class="card">
+                <h2>7º Setimo Projeto</h2>
+                <img src="img/site academia.JPG" alt="7º Setimo Projeto">
+            </div>
+            <div class="card">
+                <h2>8º Oitavo Projeto</h2>
+                <img src="img/site academia.JPG" alt="8º Oitavo Projeto">
+            </div>
+        </div>
+
+    </section>
+    <script>
+        function randomEmoji (){
+            const number = Math.random()
+            if(number < 0.2) return '😄'
+            if(number > 0.2 && number < 0.4) return '😃'
+            if(number > 0.4 && number < 0.6) return '😅'
+            if(number > 0.6 && number < 0.8) return '😅'
+            if(number > 0.8) return '😂'          
+        }
+        const spanEmoji = document.getElementById('emoji' );
+        spanEmoji.innerHTML = randomEmoji()
+        setInterval( Function (){
+            spanEmoji.innerHTML = randomEmoji()
+        }, 1000)
+    </script>
+
+
+</body>
+</html>
